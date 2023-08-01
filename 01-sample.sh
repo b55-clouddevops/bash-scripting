@@ -9,5 +9,4 @@ echo Welcome To Bach Scripting
 # $ bash scriptName.sh  or  sh scriptName.sh  or  ./scriptName.sh
 
 echo Line1
-
 echo Line2
