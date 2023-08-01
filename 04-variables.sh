@@ -22,8 +22,7 @@ echo  a
 echo  "Printing the value of a : $a"     # $a   and    ${a} : both are same. Prefer to use in flower brackets
 echo  "Print the value of a : ${a}" 
 
-
-
+echo "Printing the value of x : $x"
 
 # [ ]  : Square Branket 
 # ( )  : Paranthesis
