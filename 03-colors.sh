@@ -24,5 +24,5 @@ echo -e "\e[32m I am printing GREEN Color   \e[0m"
 echo -e "\e[34m I am printing BLUE Color    \e[0m"
 echo -e "\e[35m I am printing Magneta Color \e[0m"
 
-
+# Background + Foreground Color
 echo -e "\e[43;34m I am printing both the colors \e[0m"
