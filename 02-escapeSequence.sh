@@ -19,3 +19,6 @@ echo Line2
 echo Line3
 
 echo -e "Line5\nLine6"
+# Whenever you're using special characters , always enclose them in DOUBLE QUOTES
+# " "  : Double Quotes 
+# ' '  : Single Quotes
