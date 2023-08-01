@@ -18,4 +18,4 @@ echo Line1
 echo Line2
 echo Line3
 
-echo Line1\nLine2
+echo -e Line5\nLine6
