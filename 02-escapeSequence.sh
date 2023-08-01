@@ -10,6 +10,7 @@ echo Welcome To Bach Scripting
 
 
 #  \n : This indicates a new line 
+# \t  : This gives a tab space 
 #  Manoj\nDevOps
 #  Manoj
 #  DevOps
@@ -22,3 +23,5 @@ echo -e "Line5\nLine6"
 # Whenever you're using special characters , always enclose them in DOUBLE QUOTES
 # " "  : Double Quotes 
 # ' '  : Single Quotes
+
+echo -e "Cloud\tDevOps\tare\tBooming"
