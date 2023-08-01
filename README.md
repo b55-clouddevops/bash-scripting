@@ -28,7 +28,7 @@ This is a repository created to publish all the Bash Bascis and project automati
 
 
 
-### Follwoing are the shell scripting topics which we discuss as a part of our project
+### Following are the shell scripting topics which we discuss as a part of our project
 
 ```
 1. SheBang Notation and Comments
