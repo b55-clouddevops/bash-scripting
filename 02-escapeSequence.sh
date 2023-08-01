@@ -8,7 +8,6 @@ echo Welcome To Bach Scripting
 # This is how we can execute the scripts
 # $ bash scriptName.sh  or  sh scriptName.sh  or  ./scriptName.sh
 
-
 #  \n : This indicates a new line 
 # \t  : This gives a tab space 
 #  Manoj\nDevOps
