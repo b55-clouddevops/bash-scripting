@@ -27,7 +27,6 @@ This is a repository created to publish all the Bash Bascis and project automati
 *   And then Configuration Management. 
 
 
-
 ### Following are the shell scripting topics which we discuss as a part of our project
 
 ```
@@ -48,3 +47,6 @@ This is a repository created to publish all the Bash Bascis and project automati
 10. Commands
 
 ```
+
+
+
