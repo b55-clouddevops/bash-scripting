@@ -19,8 +19,8 @@ c=xyz               # c is a string
 # echo $a   
 
 echo  a
-echo  "Printing the value of $a"     # $a   and    ${a} : both are same. Prefer to use in flower brackets
-echo  "Print the value of ${a}" 
+echo  "Printing the value of a : $a"     # $a   and    ${a} : both are same. Prefer to use in flower brackets
+echo  "Print the value of a : ${a}" 
 
 
 
