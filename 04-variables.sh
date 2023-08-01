@@ -16,7 +16,15 @@ c=xyz               # c is a string
 # Using special characters, we are going to print the value of the variables.
 
 # $ : Special Character us used to print the value of the variable 
-# echo $a
+# echo $a   
 
 echo  a
-echo  $a 
+echo  "Printing the value of $a"     # $a   and    ${a} : both are same. Prefer to use in flower brackets
+echo  "Print the value of ${a}" 
+
+
+
+
+# [ ]  : Square Branket 
+# ( )  : Paranthesis
+# { }  : Flower Brackets 
