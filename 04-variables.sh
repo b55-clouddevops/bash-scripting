@@ -6,6 +6,7 @@
 a=10                # a is a integer
 b=20                # b is also an interger 
 c=xyz               # c is a string 
+DATE="02AUG2023"
 
 # There is no concept of data types in linux or shellScripting.
 # By default. every thing is a string.
@@ -20,10 +21,16 @@ c=xyz               # c is a string
 
 echo  a
 echo  "Printing the value of a : $a"     # $a   and    ${a} : both are same. Prefer to use in flower brackets
-echo  "Print the value of a : ${a}" 
+echo  "Print the value of a : ${a}"
 
-echo "Printing the value of x : $x"
+echo "Printing the value of x : $x"   
+
+echo "Today's date is $DATE"
+#  x is not declared and we are attempting to print and it's not any going to report anything and it just shows null
 
 # [ ]  : Square Branket 
 # ( )  : Paranthesis
 # { }  : Flower Brackets 
+
+# DATA_DIR=robot
+# rm -rf   /data/${DATA_DIR}/  # rm -rf /data/       # rm -rf /data/robot/
