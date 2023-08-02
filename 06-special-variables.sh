@@ -5,5 +5,9 @@
 
 # Here are few of the special variabes :  $0 to $9 , $? ,  $#,  $* , $@ 
 
-echo $0     # $0 prints the script name you're executing 
+ROCKET_NAME=Chandrayaan
+echo $0                                 # $0 prints the script name you're executing 
 echo "Executed Script Name Is : $0"
+
+
+echo "Name of Recently Launched Rocket In India Is $ROCKET_NAME"
