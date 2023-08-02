@@ -34,7 +34,7 @@
 hai() {
     echo "I am hai function"
     echo "I am here to tell you HAI"
-    ehco "I am completed"
+    echo "I am completed"
 }
 
 stat() {
