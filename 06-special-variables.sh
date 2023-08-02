@@ -10,6 +10,10 @@ a=10
 b=20
 c=30
 
+echo value of a is $a
+echo value of b is $b
+echo value of c is $c
+
 echo $0                                                # $0 prints the script name you're executing 
 echo "Executed Script Name Is : $0"
 
@@ -25,7 +29,7 @@ echo "Current Topic Is $3"
 #                     $1    $2    $3  
 
 echo $*    # $* is going to print the used variables  
-echo $@    # $@ is going to print the used variables  
-echo $$    # $$ is going to print the PID of the current proces 
-echo $#    # $# is going to pring the number of arguments
-echo $?    # $? is going to print the exit code of the last command.
+# echo $@    # $@ is going to print the used variables  
+# echo $$    # $$ is going to print the PID of the current proces 
+# echo $#    # $# is going to pring the number of arguments
+# echo $?    # $? is going to print the exit code of the last command.
