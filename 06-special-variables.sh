@@ -11,5 +11,6 @@ echo "Executed Script Name Is : $0"
 
 echo "Name of Recently Launched Rocket In India Is $1"
 echo "Popular EV Vehicle In States Is $2"
+echo "Current Topic Is $3"
 
 #  bash scriptName.sh  arg1  arg2  arg3
