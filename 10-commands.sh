@@ -19,14 +19,21 @@
 # This is how we call a function
 # f
 
-sample() {
-    echo Hai from sample function
-    echo Sample function is completed
+# sample() {
+#     echo Hai from sample function
+#     echo Sample function is completed
+# }
+
+
+# sample 
+
+# echo sample call is completed 
+
+# sample 
+
+stat() {
+    echo "Number of sessions opened are $(who | wc -l)
+    echo "Todays date is $(date +%F)
 }
 
-
-sample 
-
-echo sample call is completed 
-
-sample 
+stat 
