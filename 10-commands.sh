@@ -32,8 +32,20 @@
 # sample 
 
 stat() {
-    echo "Number of sessions opened are $(who | wc -l)
-    echo "Todays date is $(date +%F)
+    echo "Number of sessions opened are $(who | wc -l)"
+    echo "Todays date is $(date +%F)"
 }
+
+stat 
+
+sleep 1 
+
+stat 
+
+sleep 2 
+
+stat 
+
+sleep 3 
 
 stat 
