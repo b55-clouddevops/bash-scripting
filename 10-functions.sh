@@ -45,4 +45,4 @@ stat() {
     hai 
 }
 
-stat 
+stat
