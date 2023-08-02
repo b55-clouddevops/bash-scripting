@@ -29,7 +29,7 @@ echo "Executed Script Name Is : $0"
 #                     $1    $2    $3  
 
 echo "Variables Used In The Script $*"    # $* is going to print the used variables  
-echo $@    # $@ is going to print the used variables  
+echo "Variabels used are $@"              # $@ is going to print the used variables  
 echo $$    # $$ is going to print the PID of the current proces 
 echo $#    # $# is going to pring the number of arguments
 echo $?    # $? is going to print the exit code of the last command.
