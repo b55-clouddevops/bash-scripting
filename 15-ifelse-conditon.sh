@@ -1,6 +1,6 @@
 #/bin/bash 
 
-echo "Demo on if usage
+echo "Demo on if usage"
 
 ACTION=$1 
 
