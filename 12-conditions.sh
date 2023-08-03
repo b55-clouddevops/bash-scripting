@@ -24,6 +24,6 @@ case $ACTION in
         ;;
     *)
         echo "Valid Options are start or stop or restart"
-        echo "Example Usage : bash scriptName stop"
+        echo "Example Usage :\n \t bash scriptName stop"
         ;;
 esac 
