@@ -6,6 +6,9 @@
 # Among all,  0  represents action completed successfull .
 # Anything in betwenn 1 to 255 represents either partial succes, parital failure , complete failure
 
+# 0         : Global Success
+# 1 - 125   : Some failure from the command 
+# 125+      : System Failure
 
 
 
