@@ -8,3 +8,6 @@ b=300
 echo $a
 COMMENT
 echo $b 
+
+
+# This is an example of Multi-line Comment, whatever we have enclosed in between <<COMMENT    COMMENT will be marked as comment
