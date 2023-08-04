@@ -104,3 +104,10 @@ else
     echo Thanks
 
 fi  -->
+
+
+
+
+# In Bash Scripting, even if the instruction x-fails, it just goes with the execution of other commands in sequence.
+# That's the default behavior of BASH.
+# If you don't want the script to proceeding further in case of any failure, you can use "set -e" in the beginning of the script.
