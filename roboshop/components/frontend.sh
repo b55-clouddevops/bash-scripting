@@ -5,7 +5,7 @@
 USER_ID=$(id -u)
 
 if [ $USER_ID -ne 0 ] ; then    
-    echo -e "\e[32m Script is expected to executed by the roor user or with a sudo privilege \e[0m \n \t Example: sudo bash wrapper.sh frontend"
+    echo -e "\e[31m Script is expected to executed by the roor user or with a sudo privilege \e[0m \n \t Example: \n\t sudo bash wrapper.sh frontend"
     exit 1
 fi 
 
