@@ -1,7 +1,17 @@
 #!/bin/bash 
 
+# Validate the user who is running the script is a root user or not.
+
+USER_ID=$(id -u)
+
+if [ $USER_ID -ne 0 ] ; then    
+    echo -e "\e[32m Script is expected to executed by the roor user or with a sudo privilege \e[0m \n \t Example: sudo bash wrapper.sh frontend"
+    exit 1
+fi 
+
 echo "Configuring frontend"
-yum install nginx -y 
+yum install nginx -y
+
 
 # yum install nginx -y
 # systemctl enable nginx
@@ -16,3 +26,9 @@ yum install nginx -y
 # rm -rf frontend-main README.md
 # mv localhost.conf /etc/nginx/default.d/roboshop.conf
 
+
+
+
+
+# I want to ensure, that SCRIPT SHOULD Fail the user who run the scipt is not a root user.
+# rather executing the commands and failing.
