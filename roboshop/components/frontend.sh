@@ -1,5 +1,6 @@
 #!/bin/bash 
 
+set -e 
 
 # Validate the user who is running the script is a root user or not.
 
@@ -56,7 +57,7 @@ stat $?
 echo -n "Restarting Frontend:"
 systemctl daemon-reload     &>>  /tmp/frontend.log
 systemctl restart nginx     &>>  /tmp/frontend.log
-
+stat $?
 
 
 
