@@ -67,6 +67,7 @@ echo -n "Starting the ${COMPONENT} service :"
 systemctl daemon-reaload &>> ${LOGFILE}
 systemctl enable ${COMPONENT} &>> ${LOGFILE}
 systemctl restart ${COMPONENT} &>> ${LOGFILE}
+stat $?
 
 
 echo -e "\e[35m ${COMPONENT} Installation Is Completed \e[0m \n"
