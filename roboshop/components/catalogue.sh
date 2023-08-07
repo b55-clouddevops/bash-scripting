@@ -53,6 +53,11 @@ mv  ${COMPONENT}-main ${COMPONENT}
 chown -R ${APPUSER}:${APPUSER} /home/${APPUSER}/${COMPONENT}/
 stat $?
 
+echo -n "Generating the ${COMPONENT} artifacts :"
+cd /home/${APPUSER}/${COMPONENT}/
+npm install     &>> ${LOGFILE}
+stat $? 
+
 
 # echo -n "Injecting ${COMPONENT} Schema:"
 # cd ${COMPONENT}-main
