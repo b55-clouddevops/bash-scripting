@@ -38,13 +38,9 @@ if [ $? -ne 0 ] ; then
     stat $? 
 fi 
 
-
-
-
-
-# echo -n "Downloading the ${COMPONENT} schema: "
-# curl -s -L -o /tmp/${COMPONENT}.zip "https://github.com/stans-robot-project/${COMPONENT}/archive/main.zip" 
-# stat $? 
+echo -n "Downloading the ${COMPONENT} : "
+curl -s -L -o /tmp/${COMPONENT}.zip "https://github.com/stans-robot-project/${COMPONENT}/archive/main.zip" 
+stat $? 
 
 # echo -n "Extracing the ${COMPONENT} Schema:"
 # cd /tmp 
