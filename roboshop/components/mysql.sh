@@ -42,9 +42,15 @@ fi
 
 DOWNLOAD      # Downloads
 
+echo -n "Extracting the schema: "
+unzip -o /tmp/${COMPONENT}.zip
+stat $?
+
 echo -n "Injecting the schema:"
 cd /tmp/${COMPONENT}-main 
 mysql -u root -pRoboShop@1 <shipping.sql     &>>  ${LOGFILE} 
 stat $? 
+
+
 
 echo -e "\e[35m ${COMPONENT} Installation Is Completed \e[0m \n"
