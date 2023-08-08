@@ -39,3 +39,12 @@ if [ $? -eq 0 ]; then
     echo "uninstall plugin validate_password" | mysql -uroot -pRoboShop@1 &>>  ${LOGFILE}
     stat $?
 fi 
+
+DOWNLOAD      # Downloads and extracts mysql Schema
+
+echo -n "Injecting the schema:"
+cd ${COMPONENT}-main 
+mysql -u root -pRoboShop@1 <shipping.sql     &>>  ${LOGFILE} 
+stat $? 
+
+echo -e "\e[35m ${COMPONENT} Installation Is Completed \e[0m \n"
