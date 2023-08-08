@@ -40,7 +40,7 @@ if [ $? -eq 0 ]; then
     stat $?
 fi 
 
-DOWNLOAD      # Downloads and extracts mysql Schema
+DOWNLOAD      # Downloads
 
 echo -n "Injecting the schema:"
 cd /tmp/${COMPONENT}-main 

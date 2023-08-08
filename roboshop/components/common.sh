@@ -85,7 +85,7 @@ NODEJS() {
 
         CREATE_USER              # calls CREATE_USER function that creates user account.
 
-        DOWNLOAD     # Downloads and extracts the components
+        EXTRACT     # Downloads and extracts the components
 
         echo -n "Generating the ${COMPONENT} artifacts :"
         cd /home/${APPUSER}/${COMPONENT}/
