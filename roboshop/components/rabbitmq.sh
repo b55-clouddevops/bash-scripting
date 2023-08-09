@@ -1,7 +1,6 @@
 #!/bin/bash 
 
 set -e
-
 # Validate the user who is running the script is a root user or not.
 COMPONENT=rabbitmq
 
