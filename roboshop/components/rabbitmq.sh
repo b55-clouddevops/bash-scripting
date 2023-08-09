@@ -29,8 +29,8 @@ if [$? -ne 0 ] ; then
 fi 
 
 echo -n "Configuring the permissions :"
-rabbitmqctl set_user_tags roboshop administrator
-rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"
+rabbitmqctl set_user_tags roboshop administrator     &>> ${LOGFILE}
+rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"     &>> ${LOGFILE}
 stat $?
 
 echo -e "\e[35m ${COMPONENT} Installation Is Completed \e[0m \n"
