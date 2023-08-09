@@ -130,6 +130,8 @@ PYTHON() {
 
         DOWNLOAD_AND_EXTRACT     # Downloads and extracts the components
 
+        echo -n "Generating the artifacts"
+        cd /home/${APPUSER}/${COMPONENT}/ 
         pip3 install -r requirements.txt    &>> ${LOGFILE} 
         stat $?
 
