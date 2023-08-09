@@ -1,5 +1,7 @@
 #!/bin/bash 
 
+set -e
+
 # Validate the user who is running the script is a root user or not.
 COMPONENT=rabbitmq
 
@@ -22,7 +24,7 @@ systemctl start rabbitmq-server    &>> ${LOGFILE}
 stat $? 
 
 sudo rabbitmqctl list_users | grep roboshop &>> ${LOGFILE}
-if [$? -ne 0 ] ; then 
+if [ $? -ne 0 ] ; then 
     echo -n "Creating ${COMPOMENT} user account :"
     rabbitmqctl add_user roboshop roboshop123 &>> ${LOGFILE}
     stat $? 
