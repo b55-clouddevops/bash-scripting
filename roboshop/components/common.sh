@@ -117,3 +117,20 @@ JAVA() {
         CONFIG_SVC
 
 }
+
+
+PYTHON() {
+        echo -e "\e[35m Configuring ${COMPONENT} ......! \e[0m \n"
+
+        echo -n "Installing python:"
+        yum install python36 gcc python3-devel -y &>> ${LOGFILE}
+        stat $? 
+
+        CREATE_USER              # calls CREATE_USER function that creates user account.
+
+        DOWNLOAD_AND_EXTRACT     # Downloads and extracts the components
+
+        pip3 install -r requirements.txt    &>> ${LOGFILE} 
+        stat $?
+
+}
