@@ -30,7 +30,7 @@ create_ec2() {
 
 if [ "$1" == "all" ]; then 
 
-    for component in mongodb catalogue cart user shipping frontend payment mysql redis rabbiqmg; do 
+    for component in mongodb catalogue cart user shipping frontend payment mysql redis rabbitmg; do 
         COMPONENT=$component 
         create_ec2
     done 
