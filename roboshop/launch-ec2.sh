@@ -20,7 +20,7 @@ SG_ID="$(aws ec2 describe-security-groups  --filters Name=group-name,Values=b55-
 INSTANCE_TYPE="t3.micro"
 HOSTEDZONEID="Z074928892F9CHCZSJQ4"  
 
-echo -e "****** Creating \e[35m ${COMPONENT} \e[0m Server Is In Progress **************
+echo -e "****** Creating \e[35m ${COMPONENT} \e[0m Server Is In Progress ************** "
 PRIVATEIP=$(aws ec2 run-instances --image-id ${AMI_ID} --instance-type ${INSTANCE_TYPE}  --security-group-ids ${SG_ID} --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=${COMPONENT}}]" | jq '.Instances[].PrivateIpAddress'| sed -e 's/"//g') 
 
 echo -e "Private IP Address of the $COMPONENT is $PRIVATEIP \n\n"
