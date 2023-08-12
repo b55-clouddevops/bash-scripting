@@ -7,6 +7,13 @@
 # 4) Instances you need 
 # 5) DNS Record : Hosted Zone Id
 
+COMPONENT=$1    
+if [ -z $1 ] ; then 
+    echo -e "\e[31m COMPONENT NAME IS NEEDED \e[0m \n\n\t"
+    echo -e "\e[35m Ex Usage $ bash launch-ec2 \e[0m"
+    exit 1
+fi 
+
 AMI_ID="ami-0c1d144c8fdd8d690"
 INSTANCE_TYPE="t3.micro"
 SG_ID="sg-072a9ee99beac7e26"                             # b54-allow-all security group id
