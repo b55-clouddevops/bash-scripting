@@ -26,9 +26,8 @@ PRIVATEIP=$(aws ec2 run-instances --image-id ${AMI_ID} --instance-type ${INSTANC
 echo -e "Private IP Address of the $COMPONENT is $PRIVATEIP \n\n"
 echo -e "Creating DNS Record of ${COMPONENT}: "
 
-sed -e "s/COMPONENT/${COMPONENT}/"  -e "s/IPADDRESS/${IPADDRESS}/" route53.json  > /tmp/r53.json 
+sed -e "s/COMPONENT/${COMPONENT}/"  -e "s/IPADDRESS/${PRIVATEIP}/" route53.json  > /tmp/r53.json 
 cat /tmp/r53.json 
 
 aws route53 change-resource-record-sets --hosted-zone-id $HOSTEDZONEID --change-batch file:///tmp/r53.json
-cat  /tmp/r53.json
 echo -e "\e[36m **** Creating DNS Record for the $COMPONENT has completed **** \e[0m \n\n"
